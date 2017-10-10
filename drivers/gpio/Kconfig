@@ -147,6 +147,11 @@ config GPIO_BCM_VIRT
 	help
 	  Turn on virtual GPIO support for Broadcom BCM283X chips.
 
+config GPIO_BCM2835
+	bool "Broadcom for bcm2835"
+	help
+	  Compatible with the Raspberry pi{2,3}
+
 config GPIO_BRCMSTB
 	tristate "BRCMSTB GPIO support"
 	default y if (ARCH_BRCMSTB || BMIPS_GENERIC)
